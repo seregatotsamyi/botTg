@@ -1,18 +1,18 @@
-export const keyboardStart = [
+module.exports.keyboardStart = [
     [{
-        text: 'Кто самая красивая?',
+        text: 'Просмотреть портфолио markup',
         callback_data: 'markupKeyboard'
     }],
     [{
-        text: 'React',
+        text: 'Просмотреть портфолио React.js',
         callback_data: 'reactKeyboard'
     }],
 
 ];
 
-export const keyboardMarkup = [
+module.exports.keyboardMarkup = [
     [{
-        text: 'Кристина)',
+        text: 'Интернет школа - sdavalkin',
         callback_data: 'moreKeks'
     }],
 
