@@ -1,6 +1,6 @@
 export const keyboardStart = [
     [{
-        text: 'Портфолио по верстке',
+        text: 'Кто самая красивая?',
         callback_data: 'markupKeyboard'
     }],
     [{
@@ -12,12 +12,8 @@ export const keyboardStart = [
 
 export const keyboardMarkup = [
     [{
-        text: 'Портфолио по верстке',
+        text: 'Кристина)',
         callback_data: 'moreKeks'
-    }],
-    [{
-        text: 'React',
-        callback_data: 'morePes'
     }],
 
 ];
