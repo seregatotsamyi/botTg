@@ -4,12 +4,14 @@ dotenv.config()
 const { Telegraf } = require('telegraf')
 const { message } = require('telegraf/filters')
 const { keyboardStart, keyboardMarkup } = require('./app/keybords')
+const globalLocalisation = require('./config')
+
+
 
 const bot = new Telegraf(process.env.BOT_TOKEN)
 
-
 bot.start(async(ctx, next) => {
-    await ctx.reply('Привет! Это мой (@seregatot) личный бот портфолио, котрый помогает мне демонтсрировать мои проекты. Выберите, какие мои бы проекты вы бы хотели посмотреть:', {
+    await ctx.reply(globalLocalisation.get('hello'), {
         reply_markup: {
             inline_keyboard: keyboardStart
         }
